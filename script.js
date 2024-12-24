@@ -21,10 +21,10 @@ function displayCards(data) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
-      <p>${item['Venue']}</p>
-      <p>${item['City']}</p>
-      <p>${item['Time']}</p>
-      <p>${item['Date']}</p>
+      <p class="venue">${item['Venue']}</p>
+      <p class="city">${item['City']}</p>
+      <p class="time">${item['Time']}</p>
+      <p class="date">${item['Date']}</p>
     `;
     container.appendChild(card);
   });
