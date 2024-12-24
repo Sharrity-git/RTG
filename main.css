@@ -231,15 +231,17 @@ svg {
     
     h1 {
         font-size: 1.4rem;
+        display: inline-block;
     }
     
-    a .h1 {
-        color: var(--background) !important;
-    }
+
 
     .mobile-h1 {
         /* color: var(--background) !important;  */
         color: white !important;
+        width: fit-content;
+        display: inline-block;
+        text-align: center;
     }
     
     .rtg-pic {
@@ -260,15 +262,19 @@ svg {
     
     .nav {
         display: flex;
-        gap: 40px;
+        /* gap: 40px; */
         background-color: var(--dark);
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        /* width: 100vw; */
     }
     
     .socials {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 35px;
         width: 100vw;
     }
 
@@ -279,13 +285,18 @@ svg {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100vw;
-        height: 400px;
+        width: 100%;
+        height: 50vh;
+        background-position: center;
     }
     
     svg {
         transform: scale(.8);
       }
+
+    .hamburger {
+        transform: scale(1.7);
+    }
     
     .image-container {
         display: none;
