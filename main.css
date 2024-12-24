@@ -201,8 +201,14 @@ svg {
 
 @media (max-width: 480px) {
 
+    html {
+        /* overflow-x: hidden; */
+    }
+
     .body {
         background-color: white !important;
+        width: 100vw;
+        /* overflow-x: hidden; */
     }
     
     .book-body {
@@ -231,17 +237,19 @@ svg {
     
     h1 {
         font-size: 1.4rem;
-        display: inline-block;
     }
     
-
-
     .mobile-h1 {
-        /* color: var(--background) !important;  */
         color: white !important;
-        width: fit-content;
-        display: inline-block;
         text-align: center;
+        /* width: 100%; */
+    }
+
+    .mobile-a {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        white-space: nowrap;
+        width: 40%;
     }
     
     .rtg-pic {
@@ -261,13 +269,13 @@ svg {
     }
     
     .nav {
-        display: flex;
-        /* gap: 40px; */
+        display: flex !important;
         background-color: var(--dark);
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
-        padding-left: 20px;
-        /* width: 100vw; */
+        padding-left: 40px;
+        width: 100vw;
+        gap: 60px;
     }
     
     .socials {
@@ -287,7 +295,7 @@ svg {
         justify-content: center;
         width: 100%;
         height: 50vh;
-        background-position: center;
+        background-position: 50% 50%;
     }
     
     svg {
@@ -295,7 +303,7 @@ svg {
       }
 
     .hamburger {
-        transform: scale(1.7);
+        transform: scale(1.1);
     }
     
     .image-container {
@@ -309,7 +317,7 @@ svg {
     .shows {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 105%;
         align-items: center;
         background-color: var(--dark);
         color: white;
@@ -327,10 +335,13 @@ svg {
     }
     
     .card {
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 0px;
-        width: 80%;
+        width: 70%;
         justify-content: space-evenly;
         border: 2px solid white;
         border-radius: 10px;
@@ -341,6 +352,8 @@ svg {
     .card p {
         /* width: 50%; */
         text-align: center;
+        display: inline;
+        color: white;
     }
     
     .city {
@@ -350,15 +363,20 @@ svg {
     }
     
     .date, .time {
-        width: 5%;
+        /* width: 30% !important; */
         text-align: center !important;
-        margin-bottom: 5px;
-        height: 5px;
+        margin: 10px !important;
+        display: inline-block !important;
+        white-space: nowrap;
     }
 
     .city, .venue {
-        width: 100%;
-        height: 0%;
+        width: 100% !important;
+        margin: 5px !important;
+        white-space: nowrap;
+        display: block;
+        grid-column: span 2;
+        text-align: center;
     }
     
     .venue {
@@ -368,11 +386,14 @@ svg {
 
     .time {
         order: 2;
+        margin-right: 35px !important;
+
     }
     
     .date {
         order: 1;
-        /* margin-right: 25px; */
+        margin-left: 40px !important;
+
     }
     
     
