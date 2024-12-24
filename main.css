@@ -200,6 +200,10 @@ svg {
 }
 
 @media (max-width: 480px) {
+
+    .body {
+        background-color: white !important;
+    }
     
     .book-body {
         height: 99vh;
@@ -208,11 +212,12 @@ svg {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        /* background-color: white !important; */
     }
     
     .header-mobile {
         display: flex;
-        width: 55vh;
+        width: 100vw;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -229,8 +234,12 @@ svg {
     }
     
     a .h1 {
-        color: var(--background);
-        color: white;
+        color: var(--background) !important;
+    }
+
+    .mobile-h1 {
+        /* color: var(--background) !important;  */
+        color: white !important;
     }
     
     .rtg-pic {
@@ -251,7 +260,7 @@ svg {
     
     .nav {
         display: flex;
-        gap: 50px;
+        gap: 40px;
         background-color: var(--dark);
     }
     
@@ -291,6 +300,8 @@ svg {
         flex-direction: column;
         width: 100%;
         align-items: center;
+        background-color: var(--dark);
+        color: white;
     }
     
     .cards-container {
@@ -310,9 +321,9 @@ svg {
         gap: 0px;
         width: 80%;
         justify-content: space-evenly;
-        border: 2px solid var(--dark);
+        border: 2px solid white;
         border-radius: 10px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 600;
     }
     
@@ -329,9 +340,9 @@ svg {
     
     .date, .time {
         width: 5%;
-        text-align: center;
+        text-align: center !important;
         margin-bottom: 5px;
-        height: 5%;
+        height: 5px;
     }
 
     .city, .venue {
@@ -358,7 +369,7 @@ svg {
         display: flex;
         flex-direction: column;
         color: var(--background);
-        background-color: var(--dark);
+        background-color: black;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
