@@ -358,8 +358,8 @@ svg {
     
     .city {
         order: 4;
-        /* width: 20%; */
-        /* margin-left: 65px; */
+        padding-bottom: 10px !important;
+        font-size: 1.1rem;
     }
     
     .date, .time {
@@ -371,12 +371,13 @@ svg {
     }
 
     .city, .venue {
-        width: 100% !important;
+        width: 70% !important;
         margin: 5px !important;
         white-space: nowrap;
         display: block;
         grid-column: span 2;
-        text-align: center;
+        text-align: left !important;
+        margin-left: 70px !important;
     }
     
     .venue {
@@ -393,7 +394,6 @@ svg {
     .date {
         order: 1;
         margin-left: 40px !important;
-
     }
     
     
